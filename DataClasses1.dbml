@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyStore" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Coffee" Member="Coffees">
+    <Type Name="Coffee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaCoffee" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="NameCoffee" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaEmp" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Instrument" Member="Instruments">
+    <Type Name="Instrument">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaInstrument" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Origin" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Shape" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
